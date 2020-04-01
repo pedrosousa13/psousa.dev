@@ -1,16 +1,13 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Bulma Quickstart',
-		author: 'Aman Mittal',
+		title: 'Pedro Sousa',
+		author: 'Pedro Sousa',
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
-		twitter: 'https://twitter.com/amanhimself',
-		github: `https://github.com/amandeepmittal`,
-		medium: 'https://medium.com/@amanhimself',
-		gatsby: 'https://www.gatsbyjs.org/',
-		bulma: 'https://bulma.io/',
-		siteUrl: `https://www.example.com`
+		description: 'Personal portfolio.',
+		keywords: `Web developer, Web, Developer, PHP, CSS, HTML, JS, Javascript, Gatsby, CSS3, HTML5`,
+		twitter: 'https://twitter.com/pedroso_usa',
+		github: `https://github.com/pedrosousa13`,
+		siteUrl: `https://psousa.dev`
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -23,29 +20,25 @@ module.exports = {
 		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
-		{
-			resolve: `gatsby-plugin-manifest`,
-			options: {
-				name: 'Makefolio',
-				short_name: 'Makefolio',
-				start_url: '/',
-				background_color: '#2980b9',
-				theme_color: '#2980b9',
-				display: 'standalone',
-				icon: 'src/images/gatsby-icon.png',
-				orientation: 'portrait'
-			}
-		},
 		`gatsby-plugin-sass`,
+		`gatsby-plugin-sitemap`,
 		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				trackingId: 'UA-XXXXXXXX-X',
-				// Setting this parameter is optional (requried for some countries such as Germany)
-				anonymize: true
-			}
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `montserrat\:300,400,700`,
+        ],
+        display: 'swap'
+      }
 		},
-		`gatsby-plugin-sitemap`
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `blog-pages`,
+				path: `${__dirname}/src/pages/blog`,
+			},
+		},
+		`gatsby-transformer-remark`,
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',

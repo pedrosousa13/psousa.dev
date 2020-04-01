@@ -1,0 +1,68 @@
+.terminal {
+  .header {
+    height: 28px;
+    background-color: #e4e3e5;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    .mac-icon {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-left: 9px;
+      display: inline-block;
+      &.exit {
+        background-color: #f96256;
+        border: 1px solid #f65549;
+      }
+      &.minimize {
+        background-color: #fdbc3d;
+        border: 1px solid #ffb524;
+      }
+      &.maximize {
+        background-color: #33c948;
+        border: 1px solid #2dbb41;
+      }
+    }
+  }
+
+  .window {
+    background-color: $info-dark;
+    padding: 35px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+
+    .statement {
+      margin-bottom: 25px;
+      margin-left: 35px;
+      margin-right: 35px;
+      line-height: 24px;
+      position: relative;
+
+      &-input {
+        color: white;
+      }
+  
+      &-output {
+        color: #d7ba7d;
+      }
+
+      .prompt-animation {
+        background-color: white;
+        animation: blink 1s step-start 0s infinite;
+        position: absolute;
+        height: 100%;
+        width: 10px;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}

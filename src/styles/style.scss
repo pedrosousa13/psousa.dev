@@ -1,12 +1,23 @@
 // Importing variables
-@import './variables.scss';
+@import './variables';
 
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
+@import './terminal';
+@import './navbar';
 
-.gradientBg {
+html, body {
+	background: $primary-color;
+	font-family: 'Rubik', sans-serif;
+}
+
+.hero {
 	display: flex;
-	background: linear-gradient(to right, $primary-color, $secondary-color);
+}
+
+.animated-caret {
+	background-color: rgba(116,127,224,.65);
+	animation: caret 1s steps(1) infinite;
 }
 
 .center {
