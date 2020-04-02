@@ -1,4 +1,8 @@
-My website
 [psousa.dev](https://psousa.dev)
 
-Blog coming soon
+#### In progress
+
+  - blog
+  - commit linting
+  - eslint config
+  - testing
