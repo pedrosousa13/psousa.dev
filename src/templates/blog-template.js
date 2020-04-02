@@ -10,12 +10,12 @@ const BlogTemplate = ({
   return (
     <>
       <Header />
-      <div className='section'>
-        <div className='blog-post'>
-          <h1 className='main-title title'>{frontmatter.title}</h1>
-          <h2 className='subtitle'>{frontmatter.date}</h2>
+      <div className="section">
+        <div className="blog-post">
+          <h1 className="main-title title">{frontmatter.title}</h1>
+          <h2 className="subtitle">{frontmatter.date}</h2>
           <div
-            className='blog-post-content'
+            className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

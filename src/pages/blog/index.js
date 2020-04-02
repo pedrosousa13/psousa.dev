@@ -9,9 +9,14 @@ const IndexPage = ({
   },
 }) => {
   const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-  return <><Header /><section className='section'>{Posts}</section></>
+    .filter((edge) => !!edge.node.frontmatter.date)
+    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />)
+  return (
+    <>
+      <Header />
+      <section className="section">{Posts}</section>
+    </>
+  )
 }
 export default IndexPage
 export const pageQuery = graphql`

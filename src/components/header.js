@@ -1,8 +1,6 @@
-import React from 'react';
-import Navbar from './navbar';
+import React from 'react'
+import Navbar from './navbar'
 
-const Header = ({ siteTitle }) => (
-  <Navbar />
-);
+const Header = ({ siteTitle }) => <Navbar />
 
-export default Header;
+export default Header
