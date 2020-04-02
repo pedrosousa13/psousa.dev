@@ -35,9 +35,9 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div class="tags has-addons">
-          <span class="tag">View on github</span>
-          <span class="tag is-dark">
+        <div className="tags has-addons">
+          <span className="tag">View on github</span>
+          <span className="tag is-dark">
             <FaGithub />
           </span>
         </div>
