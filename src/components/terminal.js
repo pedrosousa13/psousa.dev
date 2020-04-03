@@ -47,13 +47,13 @@ const Terminal = (props) => (
       <div className="statement">
         <div className="statement-input is-family-code">> Pedro.interests</div>
         <div className="statement-output is-family-code">
-          ["dogs", "cooking", "hiking", "good coffee", "gaming"]
+          ["my dog", "cooking", "hiking", "good coffee", "gaming"]
         </div>
       </div>
       <div className="statement">
         <div className="statement-input is-family-code">> Pedro.skills</div>
         <div className="statement-output is-family-code">
-          ["php", "mysql", "react", "typescript", "docker", "git"]
+          ["php", "mysql", "react", "nodejs", "typescript", "docker", "git"]
         </div>
       </div>
       <div className="statement">
