@@ -26,11 +26,11 @@ const Body = () => (
 						<p>
 							I am a full stack web developer at{' '}
 							<a
-								href="https://ef.design/"
+								href="https://keylight.de/"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Education First
+								keylight
 							</a>{' '}
 							with a demonstrated history of working in the marketing, advertising
 							and Ecommerce industries. Skilled in PHP, React, JS, Node, Magento 2
