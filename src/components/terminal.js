@@ -14,7 +14,7 @@ const Terminal = (props) => (
           > Pedro.currentLocation
         </div>
         <div className="statement-output is-family-code">
-          "Luzern, Switzerland"
+          "Berlin, Germany"
         </div>
       </div>
       <div className="statement">
